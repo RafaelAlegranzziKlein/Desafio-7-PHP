@@ -1,5 +1,5 @@
 <?php
-class CalculadoraGeometrica {
+class exercicio11 {
 
     private string $figura; // "quadrado", "retangulo" ou "circulo"
     private array $medidas;  // medidas necessárias para cada figura

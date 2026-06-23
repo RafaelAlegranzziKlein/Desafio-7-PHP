@@ -1,5 +1,5 @@
 <?php
-class Funcionario {
+class exercicio1 {
     private string $nome;
     private string $cargo;
     private float $salario;

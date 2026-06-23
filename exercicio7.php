@@ -1,5 +1,5 @@
 <?php
-class Viagem {
+class exercicio7 {
    private string $origem;
     private string $destino;
     private float $distanciaKm;

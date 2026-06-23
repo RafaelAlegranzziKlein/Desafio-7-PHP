@@ -1,5 +1,6 @@
 <?php
-class Carro {
+
+class exercicio4 {
     private string $modelo;
     private string $combustivel; // "etanol" ou "gasolina"
     private float $tanqueLitros;

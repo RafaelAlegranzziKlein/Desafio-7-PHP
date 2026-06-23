@@ -1,5 +1,5 @@
 <?php 
-class ConversorMoeda {
+class exercicio6 {
 
   private float $valorEmReais;
     private string $moedaDestino; // "USD" ou "EUR"

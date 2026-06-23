@@ -1,5 +1,5 @@
 <?php
-class Pessoa {
+class exercicio9 {
     private string $nome;
     private float $pesoKg;
     private float $alturaM;

@@ -1,6 +1,6 @@
 <?php
 
-class Pedido {
+class exercicio3 {
     private string $produto;
     private int $quantidade;
     private float $precoUnitario;

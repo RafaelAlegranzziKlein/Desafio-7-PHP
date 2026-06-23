@@ -1,5 +1,5 @@
 <?php
-class ReservaHotel {
+class exercicio10 {
 
  private string $nomeHospede;
     private int $numeroNoites;

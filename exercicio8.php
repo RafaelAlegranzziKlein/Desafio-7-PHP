@@ -1,5 +1,5 @@
 <?php
-class CalculadoraFinanceira {
+class exercicio8 {
  private float $valorCompra;
     private int $numeroParcelas;
     private float $taxaJurosMensal; // ex: 0.02 para 2% ao mês

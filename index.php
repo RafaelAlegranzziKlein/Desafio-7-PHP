@@ -1,15 +1,15 @@
 <?php
-require_once 'Funcionario.php';
-require_once 'Aluno.php';
-require_once 'Pedido.php';
-require_once 'Carro.php';
-require_once 'Produto.php';
-require_once 'ConversorMoeda.php';
-require_once 'Viagem.php';
-require_once 'CalculadoraFinanceira.php';
-require_once 'Pessoa.php';
-require_once 'ReservaHotel.php';
-require_once 'CalculadoraGeometrica.php';
+require_once 'exercicio1.php';
+require_once 'exercicio2.php';
+require_once 'exercicio3.php';
+require_once 'exercicio4.php';
+require_once 'exercicio5.php';
+require_once 'exercicio6.php';
+require_once 'exercicio7.php';
+require_once 'exercicio8.php';
+require_once 'exercicio9.php';
+require_once 'exercicio10.php';
+require_once 'exercicio11.php';
 
 // Cada form tem um campo oculto "formulario" para sabermos qual foi enviado.
 // Assim cada bloco só processa quando o seu próprio form é submetido.
@@ -51,7 +51,7 @@ $formEnviado = $_POST['formulario'] ?? null;
                 <div class="resultado">
                     <h3>Resultado:</h3>
                     <?php
-                    $func = new Funcionario(
+                    $func = new exercicio1(
                         $_POST['nome'],
                         $_POST['cargo'],
                         (float)$_POST['salario'],
@@ -79,7 +79,7 @@ $formEnviado = $_POST['formulario'] ?? null;
                 <div class="resultado">
                     <h3>Resultado:</h3>
                     <?php
-                    $aluno = new Aluno(
+                    $aluno = new exercicio2(
                         $_POST['nomeAluno'],
                         (float)$_POST['nota1'],
                         (float)$_POST['nota2'],
@@ -112,7 +112,7 @@ $formEnviado = $_POST['formulario'] ?? null;
                 <div class="resultado">
                     <h3>Resultado:</h3>
                     <?php
-                    $pedido = new Pedido(
+                    $pedido = new exercicio3(
                         $_POST['produto'],
                         (int)$_POST['quantidade'],
                         (float)$_POST['preco'],
@@ -147,7 +147,7 @@ $formEnviado = $_POST['formulario'] ?? null;
                 <div class="resultado">
                     <h3>Resultado:</h3>
                     <?php
-                    $carro = new Carro(
+                    $carro = new exercicio4(
                         $_POST['modelo'],
                         $_POST['combustivel'],
                         (float)$_POST['tanque'],
@@ -183,7 +183,7 @@ $formEnviado = $_POST['formulario'] ?? null;
                 <div class="resultado">
                     <h3>Resultado:</h3>
                     <?php
-                    $produto = new Produto(
+                    $produto = new exercicio5(
                         $_POST['nomeProduto'],
                         (int)$_POST['quantidadeEstoque'],
                         (float)$_POST['valorUnitario']
@@ -228,7 +228,7 @@ $formEnviado = $_POST['formulario'] ?? null;
                 <div class="resultado">
                     <h3>Resultado:</h3>
                     <?php
-                    $conversor = new ConversorMoeda(
+                    $conversor = new exercicio6(
                         (float)$_POST['valorReais'],
                         $_POST['moedaDestino'],
                         (float)$_POST['cotacao']
@@ -257,7 +257,7 @@ $formEnviado = $_POST['formulario'] ?? null;
                 <div class="resultado">
                     <h3>Resultado:</h3>
                     <?php
-                    $viagem = new Viagem(
+                    $viagem = new exercicio7(
                         $_POST['origem'],
                         $_POST['destino'],
                         (float)$_POST['distancia'],
@@ -285,7 +285,7 @@ $formEnviado = $_POST['formulario'] ?? null;
                 <div class="resultado">
                     <h3>Resultado:</h3>
                     <?php
-                    $calculadora = new CalculadoraFinanceira(
+                    $calculadora = new exercicio8(
                         (float)$_POST['valorCompra'],
                         (int)$_POST['parcelas'],
                         ((float)$_POST['juros']) / 100
@@ -311,7 +311,7 @@ $formEnviado = $_POST['formulario'] ?? null;
                 <div class="resultado">
                     <h3>Resultado:</h3>
                     <?php
-                    $pessoa = new Pessoa(
+                    $pessoa = new exercicio9(
                         $_POST['nomePessoa'],
                         (float)$_POST['peso'],
                         (float)$_POST['altura']
@@ -343,7 +343,7 @@ $formEnviado = $_POST['formulario'] ?? null;
                 <div class="resultado">
                     <h3>Resultado:</h3>
                     <?php
-                    $reserva = new ReservaHotel(
+                    $reserva = new exercicio10(
                         $_POST['nomeHospede'],
                         (int)$_POST['noites'],
                         $_POST['tipoQuarto']
@@ -396,7 +396,7 @@ $formEnviado = $_POST['formulario'] ?? null;
                         'altura' => (float)($_POST['alturaFigura'] ?? 0),
                         'raio'   => (float)($_POST['raio'] ?? 0),
                     ];
-                    $calculadoraGeo = new CalculadoraGeometrica($_POST['figura'], $medidas);
+                    $calculadoraGeo = new exercicio11($_POST['figura'], $medidas);
                     echo $calculadoraGeo->exibirDetalhes();
                     ?>
                 </div>
